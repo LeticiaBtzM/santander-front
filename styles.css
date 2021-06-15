@@ -1,23 +1,23 @@
 body{
-  background: pink;
+  background: rgba(236, 156, 169, 0.686);
 }
 
 h1{
   text-align: center;
-  color: rgba(66, 66, 219, 0.94);
+  color: rgba(155, 66, 219, 0.885);
 }
 
 h2{
-  color: #46484c;
+  color: #5f6164;
 }
 
 p{
-  color: rgba(255, 255, 255, 0.775);
+  color: rgba(255, 255, 255, 0.891);
 }
 
 button{
   color: #fff;
-  background: #025157;
+  background: #5fe3ec;
 }
 
 
