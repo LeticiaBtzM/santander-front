@@ -1,0 +1,23 @@
+body{
+  background: pink;
+}
+
+h1{
+  text-align: center;
+  color: rgba(46, 46, 175, 0.912);
+}
+
+h2{
+  color: #46484c;
+}
+
+p{
+  color: rgba(255, 255, 255, 0.775);
+}
+
+button{
+  color: #fff;
+  background: #025157;
+}
+
+
