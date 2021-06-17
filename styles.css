@@ -27,13 +27,14 @@ button{
   margin: 40px 20px 0 20px;
   font-size: 0;
   line-height: 45px;
+  height: 45px;
 }
 
 li{
   display: inline;
 }
 
-.header > *{
+.header > * {
   display: inline-block;
   font-size: 16px;
   vertical-align: middle;
@@ -47,15 +48,35 @@ li{
 
 .navbar{
   width: 70%;
-  /* text-align: center; */
-  text-align: left;
-  color: green;
+  text-align: center;
+  /* text-align: left; */
   font-family: sans-serif;
+}
+
+.item{
+  margin: 0 25px 0 25px;
+  color: #025157;
 }
 
 .actions{
   width: 15%;
-  /* text-align: right; */
-  text-align: left;
+  text-align: right;
+  /* text-align: left; */
   font-size: 14px;
+}
+
+.actions > *{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.actions a{
+  color: #67b54b;
+}
+
+.actions button{
+  color: white;
+  background: #67b54b;
+  padding: 12px 14px 12px 14px;
+  border-radius: 5px;
 }
