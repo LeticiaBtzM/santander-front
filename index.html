@@ -33,6 +33,20 @@
     </div>
 
   </header>
+  <br>
+  <section>
+    <!--el atributo CONTROLS agrega los controles de reproducción, no vienen de forma automática-->
+    <!--src dentro de la etiqueta video muestra sólo el formato añadido aunque no sea soportado por el navegador-->
+    <!-- <video src="./video_mp4.mp4" controls></video> -->
+
+    <!--source como etiqueta permite agregar el video en dif. formatos así el navegador tendrá opciones de reproducción-->
+    <video controls poster="./portada.jpg">
+      <source src="./video_mp4.mp4" type="video/mp4">
+      <source src="./video_webm.webm" type="video/webm">
+    </video>
+
+  </section>
+
   <h1> Aprendiendo con BEDU </h1>
   <h2> Texto con etiqueta h2 </h2>
   <h3> Texto con etiqueta h3 </h3>
