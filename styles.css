@@ -1,5 +1,5 @@
 body{
-  background: rgba(236, 156, 169, 0.686);
+  background: rgba(226, 187, 193, 0.686);
 }
 
 h1{
@@ -18,6 +18,13 @@ p{
 button{
   color: #fff;
   background: #5fe3ec;
+}
+
+.fixed-header{
+  position: fixed;background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header {
@@ -79,4 +86,45 @@ li{
   background: #67b54b;
   padding: 12px 14px 12px 14px;
   border-radius: 5px;
+}
+
+.promo{
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.publicidad > h3{
+  font-family: "Alegreya", serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+}
+
+.publicidad > p{
+  font-size: 16px;
+  color:#343434;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.publicidad > form{
+  display: flex;
+}
+
+.publicidad > form p {
+  color: #025157;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.video img{
+  width: 150px;
+  margin-top: 10px;
 }
