@@ -49,6 +49,11 @@ li{
   line-height: 45px;
 }
 
+main{
+  margin-top: 150px;
+  text-align: center;
+}
+
 .logo{
   width: 15%;
 }
