@@ -37,30 +37,33 @@
   <br>
   
   <main>
-    <h1> Aprendiendo con BEDU </h1>
-    <h2> Texto con etiqueta h2 </h2>
+    <h1> Build your blog. Build your business. </h1>
+    <!-- <h2> Texto con etiqueta h2 </h2>
     <h3> Texto con etiqueta h3 </h3>
-    <h4> Texto con etiqueta h4 </h4>
-    <h5> Texto con etiqueta h5 </h5>
-    <h6> Texto con etiqueta h6 </h6>
+    <h4> Texto con etiqueta h4 </h4> -->
+    <h5> Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales. </h5>
+    <!-- <h6> Texto con etiqueta h6 </h6> -->
+    <form action="">
+      <!--placeholder pone el texto dentro del input transparente-->
+      <!--required obliga al usuario a colocar la información o no permite enviar form-->
+      <!-- <input type="text" placeholder="Nombre" required><br>
+      <input type="text" placeholder="Apellido" required><br>
+      <input type="number" min="18" placeholder="Edad" required><br> -->
+      <input type="email" placeholder="Enter email address" required />
+      <!-- <input type="password" placeholder="Contraseña" required><br> -->
+      <button type="submit" id="enviarD">Try it now &rarr;</button>
+    </form>
     <p>
-      <b> Esto es un parráfo con texto promocional. </b>
+      Start publishing today with a <b>free 7-day trial.</b>
+    </p>
+    <p>
+      <b>No credit card</b> required
     </p>
   </main>
   
-  <!-- <input type="text"> -->
-  <form action="">
-    <!--placeholder pone el texto dentro del input transparente-->
-    <!--required obliga al usuario a colocar la información o no permite enviar form-->
-    Llena el siguiente formulario con los datos solicitados: <br>
-    <input type="text" placeholder="Nombre" required><br>
-    <input type="text" placeholder="Apellido" required><br>
-    <input type="number" min="18" placeholder="Edad" required><br>
-    <input type="email" placeholder="email" required><br>
-    <input type="password" placeholder="Contraseña" required><br>
-    <button type="submit" id="enviarD">Enviar &rarr;</button>
-  </form>
-  <img src="capterra.png" alt="Imagen capterra">
+  <div class="imagen-capterra">
+    <img src="capterra.png" alt="Imagen capterra">
+  </div>
 
   <section class="promo">
     <div class="video">
@@ -73,7 +76,7 @@
         <source src="./video_mp4.mp4" type="video/mp4">
         <source src="./video_webm.webm" type="video/webm">
       </video>
-      <img src="./flecha.png" alt="Flecha">
+      <img src="./flecha.png" alt="See how it works">
     </div>
 
     <article class="publicidad">
@@ -84,15 +87,82 @@
         publish from our library of 10,000+ professionally written articles and build your email 
         list faster with our powerful conversion tool.
       </p>
-      <form>
+      <div>
         <p>Start publishing today:</p>
-        <div>
-          <input type="email" placeholder="Enter email" required>
-          <button>Start My Trial</button>
-        </div>
-      </form>
+        <form>
+            <input type="email" placeholder="Enter email" required>
+            <button>Start My Trial</button>
+        </form>
+      </div>
     </article>
-    
+  </section>
+  
+  <section class="tarjetas">
+    <!-- Inicia tarjeta uno -->
+    <article class="tarjeta">
+      <div class="tarjeta-texto">
+        <figure>
+          <img src="./icon_uno.png" alt="Icon publish">
+        </figure>
+        <h3>Fill your blog with engaging articles.</h3>
+        <p>Publish to your blog in less time than it takes
+          to drink your morning coffee.</p>
+        <a href="https://bedu-fef.netlify.app/">Publish instantly →</a>
+      </div>
+      <div class="tarjeta-imagen">
+        <figure>
+          <img src="./image_publish_uno.png" alt="Image publish">
+        </figure>
+      </div>
+    </article>
+    <!-- Inicia tarjeta dos -->
+    <article class="tarjeta">
+      <div class="tarjeta-texto">
+        <figure>
+          <img src="./icon_dos.png" alt="Icon site traffic">
+        </figure>
+        <h3>Attract and engage more website visitors.</h3>
+        <p>Enhance your email, social media channels, and paid ads with content from Matcha.</p>
+        <a href="https://bedu-fef.netlify.app/">Get more site traffic →</a>
+      </div>
+      <div class="tarjeta-imagen">
+        <figure>
+          <img src="./image_site_traffic.png" alt="Image site traffic">
+        </figure>
+      </div>
+    </article>
+    <!-- Inicia tarjeta tres -->
+    <article class="tarjeta">
+      <div class="tarjeta-texto">
+        <figure>
+          <img src="./icon_tres.png" alt="Icon capture">
+        </figure>
+        <h3>Capture more emails with locked content.</h3>
+        <p>Convert 10x more of your traffic into subscribers and nurture them to a sale.</p>
+        <a href="https://bedu-fef.netlify.app/">Grow your email list faster →</a>
+      </div>
+      <div class="tarjeta-imagen">
+        <figure>
+          <img src="./image_capture.png" alt="Image site traffic">
+        </figure>
+      </div>
+    </article>
+    <!-- Inicia tarjeta cuatro -->
+    <article class="tarjeta">
+      <div class="tarjeta-texto">
+        <figure>
+          <img src="./icon_cuatro.png" alt="Icon roi">
+        </figure>
+        <h3>Optimize your blog’s performance.</h3>
+        <p>See what content delivers the most traffic, engagement, email subscribers, and sales.</p>
+        <a href="https://bedu-fef.netlify.app/">See content's ROI →</a>
+      </div>
+      <div class="tarjeta-imagen">
+        <figure>
+          <img src="./image_roi.png" alt="Image site traffic">
+        </figure>
+      </div>
+    </article>
   </section>
 
   <section class="post">
@@ -124,18 +194,18 @@
             Early-Stage CPG Brand Increases Lead Conversion 20x,
             Ecommerce Revenue 20%
           </h3>
+          <div class="card">
+            <img src="./icon_cart.png" alt="Cart icon">
+            <p>22% of monthly revenue influenced by content</p>
+          </div>
         </div>
   
-        <div class="card">
-          <img src="./icon_cart.png" alt="Cart icon">
-          <p>22% of monthly revenue influenced by content</p>
-        </div>
-  
-        <div class="card-footer">
+        <div class="post-footer">
           <button>See Case Study</button>
         </div>
       </article>
     </div>
   </section>
+
 </body>
 </html>

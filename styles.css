@@ -1,23 +1,5 @@
 body{
-  background: rgba(226, 187, 193, 0.686);
-}
-
-h1{
-  text-align: center;
-  color: rgba(155, 66, 219, 0.885);
-}
-
-h2{
-  color: #5f6164;
-}
-
-p{
-  color: rgba(255, 255, 255, 0.891);
-}
-
-button{
-  color: #fff;
-  background: #5fe3ec;
+  background: #fff;
 }
 
 .fixed-header{
@@ -47,15 +29,6 @@ li{
   vertical-align: middle;
   height: 100%;
   line-height: 45px;
-}
-
-main{
-  margin-top: 150px;
-  text-align: center;
-}
-
-.logo{
-  width: 15%;
 }
 
 .navbar{
@@ -93,11 +66,80 @@ main{
   border-radius: 5px;
 }
 
+h1{
+  font-family: Alegreya;
+  font-size: 60px;
+  text-align: center;
+  color:#025157;
+}
+
+h5{
+  color: #46484c;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+input{
+  font-family: inherit;
+  font-size: 15px;
+  border: 1px solid #b6b6b6;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 10px 20px;
+  width: 130px;
+  max-width: 250px;
+}
+
+button{
+  font-family: inherit;
+  font-size: 15px;
+  background: #025157;
+  color: #fff;
+  border: 1px solid #b6b6b6;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 130px;
+  max-width: 250px;
+  padding: 11px 20px;
+  overflow: visible;
+  margin-left: -10px;
+}
+
+main{
+  margin-top: 150px;
+  text-align: center;
+}
+
+main > p{
+  color: #8b8b8bcc;
+  margin-top: 15px;
+}
+
+.imagen-capterra{
+  text-align: center;
+}
+
 .promo{
   display: flex;
   width: 70%;
   margin: 100px auto;
   align-items: center;
+}
+
+.video{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.video img{
+  width: 150px;
+  margin-top: 10px;
 }
 
 .publicidad > h3{
@@ -120,18 +162,7 @@ main{
 
 .publicidad > form p {
   color: #025157;
-}
-
-.video{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.video img{
-  width: 150px;
-  margin-top: 10px;
+  margin-right: 18px;
 }
 
 .post{
@@ -166,7 +197,8 @@ main{
     color: #fff;
     border-radius: 5px;
     padding: 6px 20px;
-    margin-left: -10px;
+    width: 160px;
+    height: 50px;
 }
 
 .post-uno img{
@@ -185,13 +217,17 @@ main{
 }
 
 .stories .everly{
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #f9da73;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 280px;
+  margin-top: -65px;
 }
 
 .stories .everly img{
@@ -238,12 +274,88 @@ main{
   font-size: 16px;
 }
 
-.card-footer button{
+.post-footer button{
     background-color: #025157;
     text-align: center;
     color: #fff;
     border-radius: 5px;
     padding: 6px 20px;
     margin-bottom: 20px;
-    margin-left: 120px;
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
 }
+
+  /*grid-template: repeat(2, 1fr) / repeat(2, 50%);*/
+  /* grid-template-columns: 100px 300px; */
+  /* grid-template-columns: repeat(2, 300px); */
+  /* grid-template-columns: 500px 1fr; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 330px); */
+
+  .tarjetas{
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  }
+  
+  .tarjeta{
+    margin: 0 30px 30px 0;
+    background-color: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .tarjeta-texto{
+    padding-left: 50px; /*Da 50px a la izquierda de tarjeta-texto*/
+  }
+  
+  .tarjeta-texto > h3{
+    /* font-size: 24px; */
+    font-weight: 400;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+    /* line-height: 29px; */
+    color: #343434;
+  }
+  
+  .tarjeta-texto > p{
+    color: #7e7e7e;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+
+  }
+  
+  .tarjeta-texto > figure{
+    margin-left: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+  }
+  
+  .tarjeta-texto a{
+    color: #67b54b;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+  }
+  
+  .tarjeta-texto > figure > img{
+    width: 50px;
+  }
+  
+  .tarjeta-imagen{
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+  }
+  
+  .tarjeta-imagen > figure > img{
+    margin-left: -40px;
+    margin-top: -16px;
+    height: 250px;
+  }
