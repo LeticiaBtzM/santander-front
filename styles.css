@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@800;900&display=swap');
+
 body{
-  background: #fff;
+  background: #fffbf7;
+  margin: 0;
 }
 
 .fixed-header{
-  position: fixed;background-color: white;
+  position: fixed;
+  background-color: #fffbf7;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 900;
 }
 
 .header {
@@ -67,10 +72,11 @@ li{
 }
 
 h1{
-  font-family: Alegreya;
+  font-family: 'Alegreya', serif;
   font-size: 60px;
   text-align: center;
   color:#025157;
+  font-weight: 900;
 }
 
 h5{
@@ -179,7 +185,7 @@ main > p{
 }
 
 .post-uno h2{
-  font-family: "Alegreya", serif;
+    font-family: "Alegreya", serif;
     font-size: 51px;
     line-height: 61px;
     color: #025157;
@@ -358,4 +364,102 @@ main > p{
     margin-left: -40px;
     margin-top: -16px;
     height: 250px;
+  }
+
+  .postwork-cuatro{
+    background-color: #fffbf7;
+    text-align: center;
+    padding: 5% 10%;
+  }
+
+  .contenido-pwc h2{
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+
+  .contenido-pwc p{
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .btn-pwc{
+    height: 60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .postwork-cuatro{
+    background-color: #fffbf7;
+    margin-bottom: 200px;
+  }
+
+  .postwork-cuatro .cartas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+  }
+
+  .carta{
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+  }
+
+  .carta-img{
+    height: 350px;
+  }
+
+  .carta-img .icono{
+    width: 21px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .carta-img .imagen{
+    width: 100%;
+    height: 100%;
+  }
+
+  .carta-contenido h3{
+    text-align: center;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  .carta-contenido p{
+    text-align: center;
+    color: #46484c;
+    font-weight: 400;
+    font-size:15px;
+  }
+
+  .carta-contenido a{
+    color: #67b54b;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
   }
