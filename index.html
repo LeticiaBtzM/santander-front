@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Matcha</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./output.css">
 </head>
 
 <body>
 
-  <section class="fixed-header">
+  <!-- <section class="fixed-header">
     <header class="header">
       <a href="./index.html" class="logo">
         <img src="./logo_matcha.svg" alt="Logo matcha">
@@ -19,12 +21,11 @@
   
       <nav class="navbar">
         <ul>
-          <li>Products</li>
-          <li>Templates</li>
+          <li>Platform</li>
           <li>Pricing</li>
           <li>Customers</li>
-          <li>Blog</li>
           <li>Resources</li>
+          <li>About</li>
         </ul>
       </nav>
   
@@ -33,8 +34,49 @@
         <button>Start free trial</button>
       </div>
     </header>
-  </section>
-  <br>
+  </section> -->
+	<!-- Nuestra barra de navegación comentada va aquí -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo/matcha.svg" alt="Matcha">
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Platform</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a>Sign In</a>
+        <button>Start free trial</button>
+      </form>
+    </div>
+  </nav>
   
   <main>
     <h1> Build your blog. Build your business. </h1>
@@ -51,7 +93,7 @@
       <input type="number" min="18" placeholder="Edad" required><br> -->
       <input type="email" placeholder="Enter email address" required />
       <!-- <input type="password" placeholder="Contraseña" required><br> -->
-      <button type="submit" id="enviarD">Try it now &rarr;</button>
+      <button type="submit" id="enviarD" class="botones">Try it now &rarr;</button>
     </form>
 
     <!-- <form class="reto4-sesion5">
@@ -72,7 +114,7 @@
   </main>
   
     <figure class="imagen-capterra">
-      <img src="capterra.png" alt="Imagen capterra">
+      <img src="img/capterra.png" alt="Imagen capterra">
     </figure>
 
   <section class="promo">
@@ -82,11 +124,11 @@
       <!-- <video src="./video_mp4.mp4" controls></video> -->
       
       <!--source como etiqueta permite agregar el video en dif. formatos así el navegador tendrá opciones de reproducción-->
-      <video controls poster="./portada.jpg">
-        <source src="./video_mp4.mp4" type="video/mp4">
-        <source src="./video_webm.webm" type="video/webm">
+      <video controls poster="img/img-video/portada.jpg">
+        <source src="img/img-video/video_mp4.mp4" type="video/mp4">
+        <source src="img/img-video/video_webm.webm" type="video/webm">
       </video>
-      <img src="./flecha.png" alt="See how it works">
+      <img src="img/img-video/flecha.png" alt="See how it works">
     </div>
 
     <article class="publicidad">
@@ -99,9 +141,9 @@
       </p>
       <div>
         <p>Start publishing today:</p>
-        <form>
+        <form class="signup-form">
             <input type="email" placeholder="Enter email" required>
-            <button>Start My Trial</button>
+            <button type="submit" class="botones">Start My Trial</button>
         </form>
       </div>
     </article>
@@ -112,7 +154,7 @@
     <article class="tarjeta">
       <div class="tarjeta-texto">
         <figure>
-          <img src="./icon_uno.png" alt="Icon publish">
+          <img src="img/tarjetas/iconos-color/icon_uno.png" alt="Icon publish">
         </figure>
         <h3>Fill your blog with engaging articles.</h3>
         <p>Publish to your blog in less time than it takes
@@ -121,7 +163,7 @@
       </div>
       <div class="tarjeta-imagen">
         <figure>
-          <img src="./image_publish_uno.png" alt="Image publish">
+          <img src="img/tarjetas/image_publish_uno.png" alt="Image publish">
         </figure>
       </div>
     </article>
@@ -129,7 +171,7 @@
     <article class="tarjeta">
       <div class="tarjeta-texto">
         <figure>
-          <img src="./icon_dos.png" alt="Icon site traffic">
+          <img src="img/tarjetas/iconos-color/icon_dos.png" alt="Icon site traffic">
         </figure>
         <h3>Attract and engage more website visitors.</h3>
         <p>Enhance your email, social media channels, and paid ads with content from Matcha.</p>
@@ -137,7 +179,7 @@
       </div>
       <div class="tarjeta-imagen">
         <figure>
-          <img src="./image_site_traffic.png" alt="Image site traffic">
+          <img src="img/tarjetas/image_site_traffic.png" alt="Image site traffic">
         </figure>
       </div>
     </article>
@@ -145,7 +187,7 @@
     <article class="tarjeta">
       <div class="tarjeta-texto">
         <figure>
-          <img src="./icon_tres.png" alt="Icon capture">
+          <img src="img/tarjetas/iconos-color/icon_tres.png" alt="Icon capture">
         </figure>
         <h3>Capture more emails with locked content.</h3>
         <p>Convert 10x more of your traffic into subscribers and nurture them to a sale.</p>
@@ -153,7 +195,7 @@
       </div>
       <div class="tarjeta-imagen">
         <figure>
-          <img src="./image_capture.png" alt="Image site traffic">
+          <img src="img/tarjetas/image_capture.png" alt="Image capture">
         </figure>
       </div>
     </article>
@@ -161,7 +203,7 @@
     <article class="tarjeta">
       <div class="tarjeta-texto">
         <figure>
-          <img src="./icon_cuatro.png" alt="Icon roi">
+          <img src="img/tarjetas/iconos-color/icon_cuatro.png" alt="Icon roi">
         </figure>
         <h3>Optimize your blog’s performance.</h3>
         <p>See what content delivers the most traffic, engagement, email subscribers, and sales.</p>
@@ -169,7 +211,7 @@
       </div>
       <div class="tarjeta-imagen">
         <figure>
-          <img src="./image_roi.png" alt="Image site traffic">
+          <img src="img/tarjetas/image_roi.png" alt="Image roi">
         </figure>
       </div>
     </article>
@@ -186,62 +228,126 @@
           and consistent performance from their blogs.
         </p>
         <button>Who Uses Matcha?</button>
-        <img src="./brands_group.png" alt="Brands">
+        <img src="img/carrusel/brands_group.png" alt="Brands">
       </article>
-  
-      <article class="stories">
-        <div class="perfil">
-          <img src="./profile.png" alt="Perfil">
-        </div>
-  
-        <div class="everly">
-          <img src="./everly.png" alt="">
-        </div>
-  
-        <div class="content-stories">
-          <h4>Everly</h4>
-          <h3>
-            Early-Stage CPG Brand Increases Lead Conversion 20x,
-            Ecommerce Revenue 20%
-          </h3>
-          <div class="card">
-            <img src="./icon_cart.png" alt="Cart icon">
-            <p>22% of monthly revenue influenced by content</p>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <article class="stories">
+            <div class="carousel-item active">
+              <!-- Primer ficha del carrusel -->
+              <div class="perfil">
+                <img src="img/carrusel/profile.png" alt="Perfil">
+              </div>
+              <div class="everly">
+                <img src="img/carrusel/everly.png" alt="Icono Everly">
+              </div>
+              <!-- Texto del carrusel bajo la imagen -->
+              <div class="content-stories">
+                <h4>Everly</h4>
+                <h3>
+                  Early-Stage CPG Brand Increases Lead Conversion 20x,
+                  Ecommerce Revenue 20%
+                </h3>
+                <div class="card1">
+                  <img src="img/carrusel/icon_cart.png" alt="Cart icon">
+                  <p>22% of monthly revenue influenced by content</p>
+                </div>
+              </div>
+              <!-- Botón See case study -->
+              <div class="post-footer">
+                <button>See Case Study</button>
+              </div>
+            </div>
+
+            <!-- Segunda ficha del carrusel -->
+            <div class="carousel-item">
+              <div class="perfil">
+                <img src="img/carrusel/carrusel2.jpg" alt="Perfil">
+              </div>
+              <div class="everly">
+                <img src="img/carrusel/logo2.png" alt="Summit">
+              </div>
+              <!-- Texto del carrusel bajo la imagen -->
+              <div class="content-stories">
+                <h4>Sea to Summit</h4>
+                <h3>
+                  Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New Subscribers 820%
+                </h3>
+                <div class="card1">
+                  <img src="img/carrusel/icon_cart.png" alt="Cart icon">
+                  <p>22% of monthly revenue influenced by content</p>
+                </div>
+              </div>
+              <!-- Botón See case study -->
+              <div class="post-footer">
+                <button>See Case Study</button>
+              </div>
+            </div>
+
+            <!-- Tercer ficha del carrusel -->
+            <div class="carousel-item">
+              <div class="perfil">
+                <img src="img/carrusel/carrusel3.png" alt="Perfil">
+              </div>
+              <div class="everly">
+                <img src= "img/carrusel/logo3.png" alt="">
+              </div>
+              <!-- Texto bajo la imagen -->
+              <div class="content-stories">
+                <h4>Mambe Waterproof Blankets</h4>
+                <h3>
+                  How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                </h3>
+                <br>
+                <div class="card1">
+                  <img src="img/carrusel/icon_cart.png" alt="Cart icon">
+                  <p>22% of monthly revenue influenced by content</p>
+                </div>
+              </div>
+              <!-- Botón See case study -->
+              <div class="post-footer">
+                <button>See Case Study</button>
+              </div>
+            </div>
           </div>
-        </div>
-  
-        <div class="post-footer">
-          <button>See Case Study</button>
-        </div>
-      </article>
+          <br>
+        </article>
+      </div>
     </div>
   </section>
 
     <section class="postwork-cuatro">
       <div class="contenido-pwc">
         <h2>How does Matcha wok?</h2>
-        <p>Your blog can be so much more than window dressing. Use Matcha’s simple 
-          formula to transform your blog into an ecommerce growth engine.</p>
+        <p>Your blog can be so much more than window dressing. Use Matcha’s 
+          <a href="">simple formula</a> to transform your blog into an ecommerce growth engine.</p>
         <button class="btn-pwc">Explore the Platform</button>
       </div>
 				<div class="cartas">
 					<article class="carta">
 							<div class="carta-img">
-								<img class="icono" src="/img/icon_uno.png" alt="Publicidad">
-								<img class="imagen" src="/img/uno-publish.png" alt="Imagen publicidad">
+								<img class="icono" src="img/cartas/iconos/icon_uno.png" alt="Publicidad">
+								<img class="imagen" src="img/cartas/uno-publish.png" alt="Imagen publicidad">
 							</div>
 			
 							<div class="carta-contenido">
 								<h3>Publish</h3>
 								<p>Effortlessly fill your blog with content that shoppers want to read.</p>
-								<a href="">Publish instantly →</a>
+								<br>
+                <a href="">Publish instantly →</a>
 							</div>
 					</article>
 		
 					<article class="carta">
 							<div class="carta-img">
-								<img class="icono" src="/img/icon_dos.png" alt="Promote">
-								<img class="imagen" src="/img/dos-promote.png" alt="Image promote">
+								<img class="icono" src="img/cartas/iconos/icon_dos.png" alt="Promote">
+								<img class="imagen" src="img/cartas/dos-promote.png" alt="Image promote">
 							</div>
 			
 							<div class="carta-contenido">
@@ -253,21 +359,22 @@
 		
 					<article class="carta">
 							<div class="carta-img">
-								<img class="icono" src="/img/icon_tres.png" alt="Capture">
-								<img class="imagen" src="/img/tres-capture.png" alt="Image promote">
+								<img class="icono" src="img/cartas/iconos/icon_tres.png" alt="Capture">
+								<img class="imagen" src="img/cartas/tres-capture.png" alt="Image promote">
 							</div>
 			
 							<div class="carta-contenido">
-								<h3>Promote</h3>
+								<h3>Capture</h3>
 								<p>Turn readers into email subscribers and subscribers into customers.</p>
-								<a href="">Grow your email list →</a>
+								<br>
+                <a href="">Grow your email list →</a>
 							</div>
 					</article>
 		
 					<article class="carta">
 							<div class="carta-img">
-								<img class="icono" src="/img/icon_cuatro.png" alt="Measure">
-								<img class="imagen" src="/img/cuatro-measure.png" alt="Image measure">
+								<img class="icono" src="img/cartas/iconos/icon_cuatro.png" alt="Measure">
+								<img class="imagen" src="img/cartas/cuatro-measure.png" alt="Image measure">
 							</div>
 			
 							<div class="carta-contenido">
@@ -279,5 +386,116 @@
 				</div>
       </article>
     </section>
+
+  <section class="container blog">
+  <div class="row">
+    <!-- PRIMERA -->
+    <div class="col">
+      <h2 class="title">Learn how to grow your ecommerce business.</h2>
+      <article class="process-list">
+        <div class="process">
+          <div class="process-icon">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/build-20-454867.png" alt="Build icon" />
+          </div>
+          <div class="process-description">
+            <h3>Build</h3>
+            <p>and scale your ecommerce store</p>
+          </div>
+        </div>
+        <div class="process">
+          <div class="process-icon">
+            <img src="https://catwatchful.com/main/wp-content/uploads/2014/09/rocket-icon.png" alt="Attract icon" />
+          </div>
+          <div class="process-description">
+            <h3>Attract</h3>
+            <p>your target audience and grow site traffic</p>
+          </div>
+        </div>
+        <div class="process">
+          <div class="process-icon">
+            <img src="https://icon-library.com/images/icon-convert/icon-convert-2.jpg" alt="Convert icon" />
+          </div>
+          <div class="process-description">
+            <h3>Convert</h3>
+            <p>readers to subscribers and customers</p>
+          </div>
+        </div>
+      </article>
+      <button>Read the blog</button>
+    </div>
+    <!-- SEGUNDA -->
+    <div class="col">
+      <div class="card">
+        <img
+          src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
+          class="card-img-top"
+          alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
+          </h5>
+          <p class="metadata">
+            <strong class="category">Performance Blogging </strong>
+            <strong class="read-time">• 21 mins read</strong>
+          </p>
+          <p class="card-text">
+            Table of ContentsWhy Ecommerce Businesses Need a Blog in
+            2020Document Your Ecommerce Blog StrategyPublication: How to Create
+            High-Performing Blog ContentDistribution:...
+            <span class="read-more">+ <a>Read More</a></span>
+          </p>
+          <div class="author">
+            <img
+              src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+              alt="Shauna Ward"
+            />
+            <p>Shauna Ward</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERCERA -->
+    <div class="col">
+      <div class="card">
+        <img
+        src="https://getmatcha.com/wp-content/uploads/2019/06/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg"
+        class="card-img-top"
+        alt="What Is Licensed Content and How Does It Help Your Business Grow?"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            What Is Licensed Content and How Does It Help Your Business Grow?
+          </h5>
+          <p class="metadata">
+            <strong class="category">Performance Blogging </strong>
+            <strong class="read-time">• 6 mins read</strong>
+          </p>
+          <p class="card-text">
+            Table of ContentsWhy Ecommerce Businesses Need a Blog in
+            2020Document Your Ecommerce Blog StrategyPublication: How to Create
+            High-Performing Blog ContentDistribution:...
+            <span class="read-more">+ <a>Read More</a></span>
+          </p>
+          <div class="author">
+            <img
+            src="https://secure.gravatar.com/avatar/c2f0381c76fae0875a4c15deb4e0a2f8?s=96&d=retro&r=g"
+            alt="Rob Glover"
+            />
+            <p>Rob Glove</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>

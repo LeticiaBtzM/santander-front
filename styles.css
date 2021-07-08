@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@800;900&display=swap');
 
 body{
-  /* background: #fffbf7; */
-  background: red;
+  background: #fffbf7;
+  /* background: red; */
   margin: 0;
 }
-
+/* INICIA ESTILO DE LA BARRA DE NAVEGACIÓN COMENTADA
 .fixed-header{
   position: fixed;
   background-color: #fffbf7;
@@ -14,69 +14,95 @@ body{
   right: 0;
   z-index: 900;
 }
-
 .header {
-  /* margin-top: 40px;
+  margin-top: 40px;
   margin-left: 20px;
-  margin-right: 20px; */
+  margin-right: 20px; 
   margin: 40px 20px 0 20px;
   font-size: 0;
   line-height: 45px;
   height: 45px;
 }
-
 li{
   display: inline;
 }
-
 .header > * {
   display: inline-block;
-  font-size: 16px;
+  font-size: 25px;
   vertical-align: middle;
   height: 100%;
   line-height: 45px;
 }
-
-/* .navbar{
+.navbar{
   margin-top: 25px;
   width: 70%;
   text-align: center;
   text-align: left; 
   font-family: sans-serif;
 }
-
 .navbar > ul > li{
   margin: 0 25px 0 25px;
   color: #025157;
-} */
-
+}
 .actions{
   width: 15%;
   text-align: right;
-  /* text-align: left; */
+  text-align: left; 
   font-size: 14px;
 }
-
 .actions > *{
   margin-left: 10px;
   margin-bottom: 10px;
 }
-
 .actions a{
   color: #67b54b;
 }
-
 .actions button{
   color: white;
   background: #67b54b;
   padding: 12px 14px 12px 14px;
+  border-radius: 50%;
+} 
+ FIN DE LOS ESTILOS DE LA BARRA DE NAVEGACIÓN COMENTADA*/
+
+ .navbar {
+  background-color: #fffbf7;
+}
+
+.navbar-light .nav-item .nav-link {
+  color: #025157;
+  font-size: 16px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #025157;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*BOTÓN START FREE TRIAL*/
+button{ 
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 20px;
+  border: 0;
   border-radius: 5px;
+  color: #ffffff;
+}
+
+.form-inline a{
+  color: #67b54b;
+  font-weight: 600;
 }
 
 h1{
   font-family: 'Alegreya', serif;
   font-size: 60px;
-  text-align: center;
   color:#025157;
   font-weight: 900;
 }
@@ -96,11 +122,11 @@ input{
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding: 10px 20px;
-  width: 130px;
+  width: 180px;
   max-width: 250px;
 }
 
-button{
+.botones{
   font-family: inherit;
   font-size: 15px;
   background: #025157;
@@ -130,6 +156,7 @@ main > p{
   text-align: center;
 }
 
+/* INICIAN ESTILOS DEL VIDEO*/
 .promo{
   display: flex;
   width: 70%;
@@ -172,7 +199,9 @@ main > p{
   color: #025157;
   margin-right: 18px;
 }
+/* TERMINAN ESTILOS DEL VIDEO */
 
+/* INICIAN ESTILOS POSTWORK UNO CARRUSEL*/
 .post{
   background-color: #a1d683;
   padding: 50px 0;
@@ -268,18 +297,17 @@ main > p{
   width: 100%;
 }
 
-.card{
+.card1{
   display: flex;
   gap: 15px;
-  margin-bottom: 20px;
   align-items: center;
 }
 
-.card img{
+.card1 img{
   height: 25px;
 }
 
-.card p{
+.card1 p{
   color: #8b8b8bcc;
   font-size: 16px;
 }
@@ -290,11 +318,12 @@ main > p{
     color: #fff;
     border-radius: 5px;
     padding: 6px 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 50px; */
     margin-left: 100px;
     width: 200px;
     height: 40px;
 }
+/* TERMINAN ESTILOS POST WORK UNO CARRUSEL*/
 
   /*grid-template: repeat(2, 1fr) / repeat(2, 50%);*/
   /* grid-template-columns: 100px 300px; */
@@ -341,15 +370,14 @@ main > p{
   
   .tarjeta-texto > figure{
     margin-left: 0;
-    margin-top: -10px;
-    margin-bottom: -15px;
+    margin-bottom: 10px;
   }
   
   .tarjeta-texto a{
     color: #67b54b;
     font-size: 15px;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial;
   }
   
@@ -395,10 +423,15 @@ main > p{
     margin-bottom: 16px;
   }
 
+  .contenido-pwc a{
+    color: #67b54b;
+  }
+
   .btn-pwc{
-    height: 60px;
+    height: 40px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    background: #025157;
   }
 
   .postwork-cuatro{
@@ -493,6 +526,7 @@ main > p{
       .imagen-capterra img{
         width: 100%;
       }
+      /*FUE SÓLO PARA RETO
       .reto4-sesion5{
         flex-direction: column;
       }
@@ -503,6 +537,7 @@ main > p{
       .reto4-sesion5 button{
         border-radius: 5px;
       }
+      */
       .promo{
         flex-direction: column;
         max-width: 90%;
@@ -518,13 +553,16 @@ main > p{
       }
       .tarjetas{
         grid-template: repeat(4, 1fr) / 1fr;
-        height: 1000px;
+        width: 100%;
+        height: 1200px;
         margin-right: 20px;
+        margin-top: 20px;
       }
       .tarjeta-texto figure img{
         width: 35px;
       }
       .tarjeta-imagen{
+        border-radius: 50%;
         display: none;
       }
     }
